@@ -320,6 +320,23 @@ section { padding-block: 3.5rem; }
 .photo-placeholder.placeholder-sm { min-height: 120px; padding: 1.25rem 1rem; margin-bottom: 1.1rem; }
 .photo-placeholder.placeholder-lg { min-height: 320px; }
 
+/* -------------------- real photos (replaces placeholder once image exists) -------------------- */
+
+.site-photo {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+}
+.site-photo.photo-lg { aspect-ratio: 16 / 10; }
+.site-photo.photo-sm { aspect-ratio: 4 / 3; margin-bottom: 1.1rem; }
+.site-photo.photo-logo {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: var(--char-soft);
+  padding: 1.5rem;
+}
+
 /* -------------------- home: dish teaser -------------------- */
 
 .teaser-grid {
